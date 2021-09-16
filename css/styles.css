@@ -1,0 +1,208 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family: 'Rubik', sans-serif;
+}
+.grid-container{
+  font-weight: 300;
+  display: grid;
+  width: 100%;
+  height: auto;
+  background-color: hsl(226, 43%, 10%);
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(2, 200px);
+  grid-column-gap: 30px;
+  grid-row-gap:25px;
+  justify-content: center;
+  padding: 116px 0;
+}
+.top{
+  border-radius: 10px;
+}
+.top-work{
+    background-color: hsl(15, 100%, 70%);
+}
+.top-play{
+    background-color: hsl(195, 74%, 62%);
+}
+.top-study{
+    background-color: hsl(348, 100%, 68%);
+}
+.top-exercise{
+  height: 64px;
+  background-color: hsl(145, 58%, 55%);
+}
+.top-social{
+  height: 64px;
+  background-color: hsl(264, 64%, 52%);
+}
+.top-self-care{
+  background-color: hsl(43, 84%, 65%);
+}
+.bottom{
+  border-radius: 10px;
+  background-color: hsl(235, 46%, 20%);
+  padding: 20px;
+  position: relative;
+  bottom:  25px;
+  color: #fff;
+}
+.bottom:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: hsl(235, 45%, 61%);
+}
+ .bottom h1{
+   z-index: 1;
+  padding: 15px 0;
+  font-size: 45px;
+  font-weight: 300;
+}
+.bottom h4{
+  font-weight: 300;
+}
+.bottom p{
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+}
+.icon{
+  width: 60px;
+  position: relative;
+  left: 180px;
+}
+.icon2{
+  position: relative;
+  bottom: 15px;
+  float: right;
+}
+
+.item1{
+
+  grid-row: 1/ span 2;
+}
+.profile{
+  background-color: hsl(246, 80%, 60%);
+  padding: 20px;
+  font-size: 25px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+.profile img{
+  width: 60px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.profile h1{
+  padding-bottom: 50px;
+  color: #fff;
+  font-weight: 300;
+}
+.profile p {
+  color:hsl(236, 100%, 87%);
+  font-size: 15px;
+  font-weight: 300;
+}
+.time{
+  padding: 19px;
+  border-radius: 10px;
+  background-color: hsl(235, 46%, 20%);
+  position: relative;
+  bottom: 30px;
+}
+ul{
+  position: relative;
+  top: 10px;
+  list-style: none;
+}
+li{
+  margin: 20px;
+  margin-left: 0;
+}
+
+button {
+    color: hsl(236, 100%, 87%);
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+.weekly{
+  color: #fff;
+}
+
+@media (max-width:1125px) {
+  .grid-container{
+    font-size: 15px;
+    display: grid;
+    width: 100%;
+    height: auto;
+    background-color: hsl(226, 43%, 10%);
+    grid-template-columns: repeat(1, 80%);
+    grid-template-rows: repeat(7, 14%);
+    grid-column-gap: 30px;
+    grid-row-gap:20px;
+    justify-content: center;
+    padding: 20% 0;
+  }
+  .profile{
+    padding: 2%;
+  }
+  .profile img{
+    float: left;
+    margin: 25px 20px 0;
+  }
+  .bottom p{
+    float: right;
+    position: relative;
+    bottom: 50px;
+  }
+  .item1{
+  grid-row: 1 ;
+  }
+  .icon{
+    left:78%;
+  }
+  ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  }
+
+li {
+  margin-left: 13.5%;
+  float: left;
+}
+.li button{
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+}
+@media (max-width:485px) {
+  .grid-container{
+    font-size: 12px;
+    display: grid;
+    width: 100%;
+    height: auto;
+    background-color: hsl(226, 43%, 10%);
+    grid-template-columns: repeat(1, 80%);
+    grid-template-rows: repeat(7, 10%);
+    grid-row-gap:60px;
+    justify-content: center;
+    padding: 20% 0;
+  }
+  .profile h1{
+    font-size: 20px;
+  }
+  li {
+    margin-left: 10%;
+    float: left;
+  }
+}

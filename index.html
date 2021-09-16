@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- LOCAL CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<section class="main-panel">
+  <div class="grid-container">
+    <div class="grid-item item1">
+      <div class="profile">
+        <img src="images/image-jeremy.png" alt="profile photo"> <br>
+        <p>Report for</p>
+        <h1>Jeremy Robson</h1>
+      </div>
+       <div class="time">
+         <ul>
+           <li class="list-item-1">
+            <button class="daily" type="button">Daily</button>
+           </li>
+           <li class="list-item-2">
+             <button class="weekly" type="button">Weekly</button>
+           </li>
+           <li class="list-item-3">
+             <button class="monthly" type="button">Monthly</button>
+           </li>
+         </ul>
+       </div>
+    </div>
+
+    <div class="grid-item item">
+      <div class="top top-work">
+        <img class="icon" src="images/icon-work.svg" alt="briefcase">
+      </div>
+      <div class="bottom">
+        <h4>Work</h4>
+        <img class="icon2" src="images/icon-ellipsis.svg" alt="ellipsis">
+        <h1 class="work-current">32hrs</h1>
+        <p class="work-previous">Last Week - 36hrs</p>
+      </div>
+    </div>
+
+    <div class="grid-item item">
+      <div class="top top-play">
+        <img class="icon" src="images/icon-play.svg" alt="play">
+      </div>
+      <div class="bottom">
+        <h4>Play </h4>
+        <img class="icon2" src="images/icon-ellipsis.svg" alt="ellipsis">
+        <h1 class="play-current">10hr</h1>
+        <p class="play-previous">Last Week - 8hrs</p>
+      </div>
+    </div>
+
+    <div class="grid-item item">
+      <div class="top top-study">
+        <img class="icon" src="images/icon-study.svg" alt="study">
+      </div>
+      <div class="bottom">
+        <h4>Study </h4>
+        <img class="icon2" src="images/icon-ellipsis.svg" alt="ellipsis">
+        <h1 class="study-current">4hrs</h1>
+        <p class="study-previous">Last Week - 7hrs</p>
+      </div>
+    </div>
+
+    <div class="grid-item item">
+      <div class="top top-exercise">
+        <img class="icon" src="images/icon-exercise.svg" alt="exercise">
+      </div>
+      <div class="bottom">
+        <h4>Exercise  </h4>
+        <img class="icon2" src="images/icon-ellipsis.svg" alt="ellipsis">
+        <h1 class="exercise-current">4hrs</h1>
+        <p class="exercise-previous">Last Week - 5hrs</p>
+      </div>
+    </div>
+
+    <div class="grid-item item">
+      <div class="top top-social">
+        <img class="icon" src="images/icon-social.svg" alt="social">
+      </div>
+      <div class="bottom">
+        <h4>Social </h4>
+        <img class="icon2" src="images/icon-ellipsis.svg" alt="ellipsis">
+        <h1 class="social-current">5hr</h1>
+        <p class="social-previous">Last Week - 10hrs</p>
+      </div>
+    </div>
+
+    <div class="grid-item item">
+      <div class="top top-self-care">
+        <img class="icon" src="images/icon-self-care.svg" alt="self care">
+      </div>
+      <div class="bottom">
+        <h4>Self Care  </h4>
+        <img class="icon2" src="images/icon-ellipsis.svg" alt="ellipsis">
+        <h1 class="self-care-current">2hrs</h1>
+        <p class="self-care-previous">Last Week - 2hrs</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
